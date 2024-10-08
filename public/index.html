@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>셀렉트형 네비구현하기</title>
+  <!-- 폰트 -->
+  <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <!-- 초기화 및 그리드시스템 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- 플러그인 -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+  <!-- 커스터마이징 -->
+  <!-- 상단, 하단, 퀵, 팝업 -->
+  <link rel="stylesheet" href="../src/layout/css/common.css">
+  <link rel="stylesheet" href="../src/layout/css/hd.min.css">
+  <link rel="stylesheet" href="../src/layout/css/ft.min.css">
+
+  <!-- 개별페이지 -->
+  <link rel="stylesheet" href="../src/layout/css/main.min.css">
+
+
+  <!-- 데이터베이스 -->
+  <script src="../data/db.js"></script>
+  <!-- 데이터베이스를 화면에 연동출력 -->
+  <script src="../src/api/navi.js"></script>
+
+  <!-- 플러그인 -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- 공통 -->
+  <script src="../src/layout/js/common.js"></script>
+
+  <!-- 개별페이지 -->
+  <script src="../src/layout/js/page_main.js"></script>
+
+</head>
+
+<body class="slide-0">
+
+
+  <header id="hd" class="fixed-top ">
+    <div class="inner container-fluid d-flex justify-content-between">
+      <h1 class="mb-0 d-flex align-items-center">
+        <a href="#" class="logo d-block">
+          <span class="visually-hidden">나의소개페이지</span>
+        </a>
+      </h1>
+      <button id="hd_allmenu_LEE" class="d-lg-none  border-0  bg-transparent">
+        <span class="visually-hidden">전체메뉴</span>
+      </button>
+      <nav class="d-none d-lg-block start-0 top-100 end-0 " id="navi">
+        <ul class="d-lg-flex ps-0 mb-0  h-100">
+
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 스와이퍼배너 -->
+  <section id="mainBanner" class="overflow-hidden">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide vh-100 bg-primary fs-5 itemcenter" data-btnmsg="회원특가 한달 배달무료">Slide 1</div>
+        <div class="swiper-slide vh-100 bg-light itemcenter" data-btnmsg="구독회원 100원">Slide 2</div>
+        <div class="swiper-slide vh-100 bg-dark itemcenter" data-btnmsg="배송지연안내">Slide 3</div>
+        <div class="swiper-slide vh-100  itemcenter" data-btnmsg="단체할인">Slide 4</div>
+        <div class="swiper-slide vh-100 bg-warning itemcenter" data-btnmsg="B급상품 푼다!">Slide 5</div>
+      </div>
+      <div class="indicate position-absolute bottom-0 start-0 end-0 d-flex justify-content-center w-auto zup mb-5">
+
+      </div>
+    </div>
+  </section>
+
+  <div id="about" class="vh-100 itemcenter flex-column">
+    <h2>나의 소개 및 스킬</h2>
+  </div>
+  <div id="portfolio" class="vh-100 itemcenter flex-column">
+    <h2>탭작업넣기</h2>
+  </div>
+  <div id="contact" class="vh-100 itemcenter flex-column">
+    <h2>폼태그넣기</h2>
+  </div>
+
+
+  <!-- 퀵메뉴 -->
+  <div id="family" class="zup">
+    <h2 class="mb-0"></h2>
+    <ul class="mb-0">
+
+    </ul>
+    <a href="#top" title="상단으로">top</a>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+#hd {
+  transition: 0.3s ease-in-out;
+}
+#hd .inner h1 .logo {
+  background-image: url("https://raw.githubusercontent.com/EHEN123/boot5/306488de458b21935021b687ee04d294a10af59d/logo_min.svg");
+  width: 5rem;
+  height: 5rem;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media (min-width: 991px) {
+  #hd .inner h1 .logo {
+    background-image: url("https://raw.githubusercontent.com/EHEN123/boot5/306488de458b21935021b687ee04d294a10af59d/logo.svg");
+    height: 50px;
+    width: 150px;
+  }
+}
+#hd .inner #hd_allmenu_LEE {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/></svg>');
+  width: 2rem;
+  height: 2rem;
+  background-size: cover;
+}
+#hd .inner nav a {
+  color: black;
+}
+#hd .inner nav > ul:before {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  height: 0;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  transition: 0.5s;
+}
+#hd .inner nav > ul:hover:before {
+  background: transparent;
+  height: 15rem;
+}
+#hd .inner nav > ul > li:nth-child(2) .position-absolute {
+  right: unset;
+}
+#hd .inner nav > ul > li:nth-child(2) .position-absolute ul {
+  display: inline-block;
+}
+#hd .inner nav > ul > li > a {
+  font-size: 1.5em;
+  padding: 30px 1.5rem;
+  transition: 0.3s ease-in-out;
+}
+#hd .inner nav > ul > li .position-absolute {
+  left: 0;
+  right: 0;
+  top: 100%;
+  min-width: 100px;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+#hd .inner nav > ul > li .position-absolute ul {
+  padding: 1rem;
+}
+#hd .inner nav > ul > li:hover > a {
+  color: orange;
+}
+@media (max-width: 991px) {
+  #navi {
+    position: absolute;
+  }
+  #navi .position-absolute {
+    position: unset !important;
+  }
+}
+
+body.menuOpen:after {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+body.menuOpen #hd #hd_allmenu_LEE {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">         <path fill-rule="evenodd" d="M1.5 1.5a.5.5 0 0 1 .707 0L8 7.293 14.793 1.5a.5.5 0 0 1 .707.707L8.707 8l6.793 6.793a.5.5 0 0 1-.707.707L8 8.707 1.5 14.5a.5.5 0 0 1-.707-.707L7.293 8 1.5 1.5z"/></svg>');
+  width: 2rem;
+  height: 2rem;
+}
+body.menuOpen #hd nav {
+  display: block !important;
+}
+
+body.slide-0 #hd a,
+body.slide-2 #hd a {
+  color: white !important;
+}
+body.slide-0 #mainBanner .swiper-slide,
+body.slide-2 #mainBanner .swiper-slide {
+  color: white !important;
+}
