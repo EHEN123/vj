@@ -28,3 +28,13 @@ body.scrolldown #hd a {
   padding: 10px 1rem !important;
   transition: 0.3s ease-in-out !important;
 }
+
+#faqcontent dt.expand {
+  color: blue;
+}
+#faqcontent dt.expand + dd {
+  display: block !important;
+}
+#faqcontent dt:hover {
+  color: #aaa;
+}

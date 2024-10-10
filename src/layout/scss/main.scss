@@ -40,3 +40,17 @@ body {
   }
 
 }
+
+#faqcontent{
+  dt{
+    &.expand{
+      color: blue;
+      + dd{
+        display: block !important;
+      }
+    }
+    &:hover{
+      color: #aaa;
+    }
+  }
+}

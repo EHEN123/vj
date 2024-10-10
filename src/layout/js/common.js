@@ -9,7 +9,7 @@ window.addEventListener('load', function(){
     this.addEventListener('scroll', scrollTops);
 
     function scrollTops(){
-      console.log("Scroll position", this.scrollTop || window.scrollY, window.innerHeight, typeof window.innerHeight);
+      // console.log("Scroll position", this.scrollTop || window.scrollY, window.innerHeight, typeof window.innerHeight);
 
       // 웹표준
       const pagetop = this.scrollTop || window.scrollY;
@@ -28,3 +28,5 @@ window.addEventListener('load', function(){
     }
 
 });
+
+
